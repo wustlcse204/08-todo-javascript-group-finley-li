@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Roboto">
+</head>
+
+<body onload="getAllEventsFromServer()">
+    <div id="main-section" class="main-section">
+        <header>
+            <h2>My ToDo App</h2>
+            <div>
+                <form onsubmit="addEvent(event)">
+                    <input type="text" id="add-item-input" class="add-item-input" placeholder="Add a new event" required>
+                    <button type ="submit" class="add-event-btn" id="add-event-btn">Add</button>
+
+                </form>
+                
+            </div>
+
+        </header>
+
+
+        <div class="to-do-list-container" id="to-do-list-container">
+            <ul class="to-do-list" id="to-do-list">
+
+              
+            </ul>
+
+        </div>
+
+
+    </div>
+
+    <script src="./script.js" async defer></script>
+</body>
+
+</html>
